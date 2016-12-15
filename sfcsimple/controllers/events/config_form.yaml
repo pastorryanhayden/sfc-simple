@@ -1,0 +1,10 @@
+name: Events
+form: $/sfc/sfcsimple/models/event/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Event
+defaultRedirect: sfc/sfcsimple/events
+create:
+    redirect: 'sfc/sfcsimple/events/update/:id'
+    redirectClose: sfc/sfcsimple/events
+update:
+    redirect: sfc/sfcsimple/events
+    redirectClose: sfc/sfcsimple/events

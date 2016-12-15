@@ -1,0 +1,10 @@
+name: Speaker
+form: $/sfc/sfcsimple/models/speaker/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Speaker
+defaultRedirect: sfc/sfcsimple/speaker
+create:
+    redirect: 'sfc/sfcsimple/speaker/update/:id'
+    redirectClose: sfc/sfcsimple/speaker
+update:
+    redirect: sfc/sfcsimple/speaker
+    redirectClose: sfc/sfcsimple/speaker

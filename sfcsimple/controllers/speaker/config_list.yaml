@@ -1,0 +1,11 @@
+list: $/sfc/sfcsimple/models/speaker/columns.yaml
+modelClass: Sfc\SfcSimple\Models\Speaker
+title: Speaker
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'sfc/sfcsimple/speaker/update/:id'

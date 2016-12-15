@@ -1,0 +1,10 @@
+name: Updates
+form: $/sfc/sfcsimple/models/update/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Update
+defaultRedirect: sfc/sfcsimple/updates
+create:
+    redirect: 'sfc/sfcsimple/updates/update/:id'
+    redirectClose: sfc/sfcsimple/updates
+update:
+    redirect: sfc/sfcsimple/updates
+    redirectClose: sfc/sfcsimple/updates

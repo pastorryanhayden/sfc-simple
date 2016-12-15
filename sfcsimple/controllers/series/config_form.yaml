@@ -1,0 +1,10 @@
+name: Series
+form: $/sfc/sfcsimple/models/series/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Series
+defaultRedirect: sfc/sfcsimple/series
+create:
+    redirect: 'sfc/sfcsimple/series/update/:id'
+    redirectClose: sfc/sfcsimple/series
+update:
+    redirect: sfc/sfcsimple/series
+    redirectClose: sfc/sfcsimple/series

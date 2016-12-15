@@ -1,0 +1,128 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        required: 1
+        type: text
+        commentAbove: 'What was the sermon called?'
+    slug:
+        label: Slug
+        span: auto
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+        commentAbove: 'The URL of the sermon.  No spaces or special characters.'
+    is_published:
+        label: 'Published?'
+        span: auto
+        type: switch
+    date:
+        label: Date
+        mode: date
+        span: left
+        required: 1
+        type: datepicker
+        commentAbove: 'When was this sermon preached?'
+    service:
+        label: Service
+        oc.commentPosition: ''
+        options:
+            'Sunday AM': 'Sunday AM'
+            'Sunday School': 'Sunday School'
+            'Sunday PM': 'Sunday PM'
+            'Midweek Service': 'Midweek Service'
+            'Special Meeting': 'Special Meeting'
+            Other: Other
+        span: full
+        required: 1
+        type: radio
+    text:
+        label: 'Bible Text'
+        span: auto
+        placeholder: 'i.e. John 3:16'
+        default: Various
+        type: text
+        commentAbove: 'What Bible text was this sermon preached from?'
+    series:
+        label: Series
+        nameFrom: title
+        descriptionFrom: description
+        span: left
+        required: 1
+        type: relation
+        comment: 'You can add more series using the series tab.'
+    speaker:
+        label: Speakers
+        nameFrom: name
+        descriptionFrom: bio
+        span: auto
+        required: 1
+        type: relation
+        comment: 'You can add more speakers using the speakers tab.'
+tabs:
+    fields:
+        mp3:
+            label: 'Sermon MP3'
+            oc.commentPosition: ''
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            required: 1
+            type: fileupload
+            tab: Media
+        none:
+            label: 'Optional Media'
+            span: full
+            type: section
+            tab: Media
+        handout:
+            label: Handout
+            oc.commentPosition: ''
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: Media
+        slides:
+            label: Slides
+            oc.commentPosition: ''
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: Media
+        youtube:
+            label: 'Youtube URL'
+            oc.commentPosition: ''
+            span: left
+            type: text
+            tab: Media
+        content:
+            label: 'Sermon Content'
+            size: huge
+            mode: split
+            span: full
+            type: markdown
+            commentAbove: 'If you would like to add the text of your sermon, please do so below using markdown.'
+            tab: 'Text (Optional)'
+        section1:
+            label: 'All About Sermons'
+            span: full
+            type: section
+            tab: Help
+        partial1:
+            span: full
+            path: $/sfc/sfcsimple/models/sermon/_all_about_sermons.htm
+            type: partial
+            tab: Help

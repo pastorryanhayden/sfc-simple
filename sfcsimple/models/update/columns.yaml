@@ -1,0 +1,21 @@
+columns:
+    headline:
+        label: Headline
+        type: text
+        searchable: true
+        sortable: true
+    visible:
+        label: 'Visible?'
+        type: switch
+        searchable: true
+        sortable: true
+    startdate:
+        label: 'Start Date'
+        type: datetime
+        searchable: true
+        sortable: true
+    enddate:
+        label: 'End Date'
+        type: datetime
+        searchable: true
+        sortable: true

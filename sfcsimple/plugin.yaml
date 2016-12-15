@@ -1,0 +1,67 @@
+plugin:
+    name: 'sfc.sfcsimple::lang.plugin.name'
+    description: 'sfc.sfcsimple::lang.plugin.description'
+    author: SFC
+    icon: oc-icon-institution
+    homepage: ''
+permissions:
+    sfc.events:
+        tab: Events
+        label: 'Full events access'
+    sfc.infopage:
+        tab: Pages
+        label: 'Full pages access'
+    sfc.sermon:
+        tab: Sermons
+        label: 'Full sermons access'
+    sfc.update:
+        tab: Update
+        label: 'Full updates access'
+navigation:
+    events:
+        label: Events
+        url: sfc/sfcsimple/events
+        icon: icon-calendar
+        permissions:
+            - sfc.events
+        order: '3'
+    sermons:
+        label: Sermons
+        url: sfc/sfcsimple/sermons
+        icon: icon-microphone
+        permissions:
+            - sfc.sermon
+        order: '2'
+        sideMenu:
+            sermons1:
+                label: Sermons
+                url: sfc/sfcsimple/sermons
+                icon: icon-microphone
+                permissions:
+                    - sfc.sermon
+            speakers:
+                label: Speakers
+                url: sfc/sfcsimple/speaker
+                icon: icon-users
+                permissions:
+                    - sfc.sermon
+            series:
+                label: Series
+                url: sfc/sfcsimple/series
+                icon: icon-sitemap
+                permissions:
+                    - sfc.sermon
+    infopages:
+        label: Pages
+        url: sfc/sfcsimple/infopages
+        icon: icon-copy
+        permissions:
+            - sfc.infopage
+        order: '5'
+    updates:
+        label: Updates
+        url: sfc/sfcsimple/updates
+        icon: icon-bell
+        permissions:
+            - sfc.update
+        order: '4'

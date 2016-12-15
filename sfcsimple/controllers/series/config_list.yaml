@@ -1,0 +1,11 @@
+list: $/sfc/sfcsimple/models/series/columns.yaml
+modelClass: Sfc\SfcSimple\Models\Series
+title: Series
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'sfc/sfcsimple/series/update/:id'

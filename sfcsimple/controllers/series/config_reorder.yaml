@@ -1,0 +1,4 @@
+title: Series
+modelClass: Sfc\SfcSimple\Models\Series
+toolbar:
+    buttons: reorder_toolbar

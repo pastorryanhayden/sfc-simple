@@ -1,0 +1,51 @@
+fields:
+    name:
+        label: 'Event Name'
+        span: auto
+        required: 1
+        type: text
+        commentAbove: 'What do you want to call this event?'
+    slug:
+        label: Slug
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+        commentAbove: 'This is the URL of the Event.  It should have no spaces or special characters.'
+    is_featured:
+        label: 'Featured?'
+        span: auto
+        type: switch
+        comment: 'Featured events will show up with an image on the home page.  You can have a maximum of two of them.'
+    is_published:
+        label: 'Published?'
+        span: auto
+        type: switch
+    date:
+        label: Date
+        oc.commentPosition: ''
+        mode: datetime
+        minDate: '2016-12-01'
+        maxDate: '2020-12-01'
+        span: full
+        required: 1
+        type: datepicker
+    featured_image:
+        label: 'Featured Image'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+        commentAbove: '(Optional) Upload a 16x9 featured image.  If you do not upload one and an event is featured, a placeholder image will be used.'
+    content:
+        label: 'Page Content'
+        span: full
+        size: large
+        mode: split
+        type: markdown
+        commentAbove: '(Optional) If you are featuring this event, you can use this box to create some page content.'

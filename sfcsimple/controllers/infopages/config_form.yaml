@@ -1,0 +1,10 @@
+name: Infopages
+form: $/sfc/sfcsimple/models/infopage/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Infopage
+defaultRedirect: sfc/sfcsimple/infopages
+create:
+    redirect: 'sfc/sfcsimple/infopages/update/:id'
+    redirectClose: sfc/sfcsimple/infopages
+update:
+    redirect: sfc/sfcsimple/infopages
+    redirectClose: sfc/sfcsimple/infopages

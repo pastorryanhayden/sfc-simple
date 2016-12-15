@@ -1,0 +1,44 @@
+fields:
+    headline:
+        label: Headline
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: text
+    visible:
+        label: Visible
+        span: full
+        type: switch
+        comment: 'This must be checked for the update to show on your site.'
+    startdate:
+        label: 'Start Date'
+        oc.commentPosition: ''
+        mode: datetime
+        span: auto
+        required: 1
+        type: datepicker
+    enddate:
+        label: 'Ending Date'
+        oc.commentPosition: ''
+        mode: datetime
+        span: auto
+        required: 1
+        type: datepicker
+    content:
+        label: Content
+        size: large
+        mode: split
+        span: full
+        required: 1
+        type: markdown
+        commentAbove: 'This is the text of your update.'
+    featured_image:
+        label: '(Optional) Featured Image'
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

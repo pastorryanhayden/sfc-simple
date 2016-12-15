@@ -1,0 +1,4 @@
+title: Sermons
+modelClass: Sfc\SfcSimple\Models\Sermon
+toolbar:
+    buttons: reorder_toolbar

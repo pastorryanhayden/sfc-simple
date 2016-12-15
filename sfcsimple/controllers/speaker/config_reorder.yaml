@@ -1,0 +1,4 @@
+title: Speaker
+modelClass: Sfc\SfcSimple\Models\Speaker
+toolbar:
+    buttons: reorder_toolbar

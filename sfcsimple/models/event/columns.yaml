@@ -1,0 +1,17 @@
+columns:
+    name:
+        label: 'Event Name'
+        type: text
+        searchable: true
+        sortable: true
+    date:
+        label: 'Event Date'
+        type: datetime
+        searchable: true
+        sortable: true
+    is_featured:
+        label: 'Featured?'
+        type: switch
+    is_published:
+        label: 'Published?'
+        type: switch

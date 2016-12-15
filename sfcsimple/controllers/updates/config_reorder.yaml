@@ -1,0 +1,4 @@
+title: Updates
+modelClass: Sfc\SfcSimple\Models\Update
+toolbar:
+    buttons: reorder_toolbar

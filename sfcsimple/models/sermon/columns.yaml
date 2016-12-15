@@ -1,0 +1,31 @@
+columns:
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    is_published:
+        label: 'Published?'
+        type: switch
+        searchable: true
+        sortable: true
+    date:
+        label: Date
+        type: date
+        searchable: true
+        sortable: true
+    text:
+        label: 'Bible Text'
+        type: text
+        searchable: true
+        sortable: true
+    speaker:
+        label: Speaker
+        type: text
+        searchable: true
+        sortable: true
+    series:
+        label: Series
+        type: text
+        searchable: true
+        sortable: true

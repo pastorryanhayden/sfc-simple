@@ -1,0 +1,10 @@
+name: Sermons
+form: $/sfc/sfcsimple/models/sermon/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Sermon
+defaultRedirect: sfc/sfcsimple/sermons
+create:
+    redirect: 'sfc/sfcsimple/sermons/update/:id'
+    redirectClose: sfc/sfcsimple/sermons
+update:
+    redirect: sfc/sfcsimple/sermons
+    redirectClose: sfc/sfcsimple/sermons

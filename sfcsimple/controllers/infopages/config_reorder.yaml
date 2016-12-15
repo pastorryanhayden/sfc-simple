@@ -1,0 +1,4 @@
+title: Infopages
+modelClass: Sfc\SfcSimple\Models\Infopage
+toolbar:
+    buttons: reorder_toolbar

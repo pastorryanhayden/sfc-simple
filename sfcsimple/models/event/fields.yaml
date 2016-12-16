@@ -35,11 +35,13 @@ fields:
     featured_image:
         label: 'Featured Image'
         mode: image
-        useCaption: true
+        useCaption: 0
         thumbOptions:
             mode: crop
             extension: auto
         span: full
+        imageWidth: '256'
+        imageHeight: '144'
         type: fileupload
         commentAbove: '(Optional) Upload a 16x9 featured image.  If you do not upload one and an event is featured, a placeholder image will be used.'
     content:

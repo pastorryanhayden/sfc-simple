@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Event extends Model
+class Gallery extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
@@ -24,9 +24,9 @@ class Event extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'sfc_sfcsimple_events';
+    public $table = 'sfc_sfcsimple_galleries';
 
-    public $attachOne = [
-    'featured_image' => 'System\Models\File'
+    public $attachMany = [
+    'gallery' => 'System\Models\File'
     ];
 }

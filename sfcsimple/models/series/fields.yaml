@@ -19,8 +19,8 @@ fields:
         oc.commentPosition: ''
         mode: image
         imageWidth: '256'
-        imageHeight: '154'
-        useCaption: true
+        imageHeight: '144'
+        useCaption: 0
         thumbOptions:
             mode: crop
             extension: auto

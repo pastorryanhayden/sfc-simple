@@ -36,9 +36,11 @@ fields:
         label: '(Optional) Featured Image'
         oc.commentPosition: ''
         mode: image
-        useCaption: true
+        useCaption: 0
         thumbOptions:
             mode: crop
             extension: auto
         span: auto
+        imageWidth: '256'
+        imageHeight: '144'
         type: fileupload

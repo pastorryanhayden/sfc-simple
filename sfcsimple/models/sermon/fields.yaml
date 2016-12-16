@@ -71,7 +71,7 @@ tabs:
             thumbOptions:
                 mode: crop
                 extension: auto
-            span: full
+            span: left
             required: 1
             type: fileupload
             tab: Media

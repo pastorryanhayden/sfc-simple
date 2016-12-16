@@ -1,0 +1,4 @@
+title: Galleries
+modelClass: Sfc\SfcSimple\Models\Gallery
+toolbar:
+    buttons: reorder_toolbar

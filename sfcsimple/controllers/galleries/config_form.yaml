@@ -1,0 +1,10 @@
+name: Galleries
+form: $/sfc/sfcsimple/models/gallery/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Gallery
+defaultRedirect: sfc/sfcsimple/galleries
+create:
+    redirect: 'sfc/sfcsimple/galleries/update/:id'
+    redirectClose: sfc/sfcsimple/galleries
+update:
+    redirect: sfc/sfcsimple/galleries
+    redirectClose: sfc/sfcsimple/galleries

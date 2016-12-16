@@ -17,6 +17,9 @@ permissions:
     sfc.update:
         tab: Update
         label: 'Full updates access'
+    sfc.gallery:
+        tab: Gallery
+        label: 'Full gallery access'
 navigation:
     events:
         label: Events
@@ -65,3 +68,9 @@ navigation:
         permissions:
             - sfc.update
         order: '4'
+    gallery:
+        label: Galleries
+        url: sfc/sfcsimple/galleries
+        icon: icon-photo
+        permissions:
+            - sfc.gallery

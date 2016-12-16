@@ -25,4 +25,8 @@ class Infopage extends Model
      * @var string The database table used by the model.
      */
     public $table = 'sfc_sfcsimple_infopage';
+
+    public $attachOne = [
+    'featured_image' => 'System\Models\File'
+    ];
 }

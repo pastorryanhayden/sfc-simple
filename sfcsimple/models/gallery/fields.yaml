@@ -1,0 +1,20 @@
+fields:
+    title:
+        label: 'Gallery Title'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        comment: 'This is just for the backend. It doesn''t show up on the site.'
+    gallery:
+        label: Gallery
+        span: full
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '250'
+        imageHeight: '250'
+        type: fileupload
+        comment: 'Upload the gallery images here.'

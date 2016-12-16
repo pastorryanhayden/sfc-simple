@@ -1,0 +1,11 @@
+list: $/sfc/sfcsimple/models/gallery/columns.yaml
+modelClass: Sfc\SfcSimple\Models\Gallery
+title: Galleries
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'sfc/sfcsimple/galleries/update/:id'

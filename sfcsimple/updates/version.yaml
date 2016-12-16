@@ -48,3 +48,6 @@
 1.0.17:
     - 'Updated table sfc_sfcsimple_sermons_speakers'
     - builder_table_update_sfc_sfcsimple_sermons_speakers.php
+1.0.18:
+    - 'Created table sfc_sfcsimple_galleries'
+    - builder_table_create_sfc_sfcsimple_galleries.php

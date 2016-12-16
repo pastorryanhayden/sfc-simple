@@ -18,7 +18,9 @@ fields:
     featured_image:
         label: 'Featured Image'
         mode: image
-        useCaption: true
+        imageWidth: '256'
+        imageHeight: '144'
+        useCaption: 0
         thumbOptions:
             mode: crop
             extension: auto

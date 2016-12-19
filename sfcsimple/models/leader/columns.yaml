@@ -1,0 +1,15 @@
+columns:
+    leader_name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    position:
+        label: Position
+        type: text
+        searchable: true
+        sortable: true
+    content:
+        label: Content
+        type: text
+        searchable: true

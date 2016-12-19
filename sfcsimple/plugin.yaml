@@ -20,6 +20,12 @@ permissions:
     sfc.gallery:
         tab: Gallery
         label: 'Full gallery access'
+    sfc.pro:
+        tab: 'Pro Theme'
+        label: 'Pro Theme Stuff'
+    sfc.missionaries:
+        tab: Missionaries
+        label: 'Missionary Access (pro)'
 navigation:
     events:
         label: Events
@@ -28,6 +34,13 @@ navigation:
         permissions:
             - sfc.events
         order: '3'
+        sideMenu:
+            event-submenu:
+                label: Events
+                url: sfc/sfcsimple/events
+                icon: icon-calendar
+                permissions:
+                    - sfc.events
     sermons:
         label: Sermons
         url: sfc/sfcsimple/sermons
@@ -61,6 +74,25 @@ navigation:
         permissions:
             - sfc.infopage
         order: '5'
+        sideMenu:
+            pages-submenu:
+                label: Pages
+                url: sfc/sfcsimple/infopages
+                icon: icon-copy
+                permissions:
+                    - sfc.infopage
+            beliefs-submenu:
+                label: Beliefs
+                url: sfc/sfcsimple/beliefs
+                icon: icon-book
+                permissions:
+                    - sfc.pro
+            leaders-submenu:
+                label: Leaders
+                url: sfc/sfcsimple/leader
+                icon: icon-users
+                permissions:
+                    - sfc.pro
     updates:
         label: Updates
         url: sfc/sfcsimple/updates
@@ -68,9 +100,55 @@ navigation:
         permissions:
             - sfc.update
         order: '4'
+        sideMenu:
+            updates-submenu:
+                label: Updates
+                url: sfc/sfcsimple/updates
+                icon: icon-bell
+                permissions:
+                    - sfc.update
     gallery:
         label: Galleries
         url: sfc/sfcsimple/galleries
         icon: icon-photo
         permissions:
             - sfc.gallery
+        sideMenu:
+            gallery-submenu:
+                label: Galleries
+                url: sfc/sfcsimple/galleries
+                icon: icon-photo
+                permissions:
+                    - sfc.gallery
+    ministries:
+        label: Ministries
+        url: sfc/sfcsimple/ministries
+        icon: icon-group
+        permissions:
+            - sfc.pro
+        sideMenu:
+            ministries-submenu:
+                label: Ministries
+                url: sfc/sfcsimple/ministries
+                icon: icon-sitemap
+                permissions:
+                    - sfc.pro
+            leaders-submenu:
+                label: 'Ministry Leaders'
+                url: sfc/sfcsimple/mleaders
+                icon: icon-user
+                permissions:
+                    - sfc.pro
+    missionaries:
+        label: Missionaries
+        url: sfc/sfcsimple/missionary
+        icon: icon-globe
+        permissions:
+            - sfc.missionaries
+        sideMenu:
+            missionary-submenu:
+                label: Missionaries
+                url: sfc/sfcsimple/missionary
+                icon: icon-globe
+                permissions:
+                    - sfc.missionaries

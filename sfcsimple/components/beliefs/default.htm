@@ -1,0 +1,7 @@
+{% set beliefs = __SELF__.beliefs %}
+
+<ul>
+    {% for item in beliefs %}
+        <li>{{item.title}}</li>
+{% endfor %}
+</ul>

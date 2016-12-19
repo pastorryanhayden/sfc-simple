@@ -29,4 +29,15 @@ class Event extends Model
     public $attachOne = [
     'featured_image' => 'System\Models\File'
     ];
+
+    public $belongsToMany = [
+
+    'ministry' => [
+
+        'Sfc\SfcSimple\Models\Ministry',
+        'table' => 'sfc_sfcsimple_ministries_events',
+        'order' => 'name'
+
+    ],
+    ];
 }

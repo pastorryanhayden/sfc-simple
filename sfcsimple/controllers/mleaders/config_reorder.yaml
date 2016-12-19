@@ -1,0 +1,4 @@
+title: Mleaders
+modelClass: Sfc\SfcSimple\Models\Mleader
+toolbar:
+    buttons: reorder_toolbar

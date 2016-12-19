@@ -1,0 +1,64 @@
+fields:
+    name:
+        label: Name
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    field:
+        label: Field
+        oc.commentPosition: ''
+        span: full
+        type: text
+    continent:
+        label: Continent
+        oc.commentPosition: ''
+        span: auto
+        options:
+            'North America': 'North America'
+            'South America': 'South America'
+            Asia: Asia
+            Europe: Europe
+            'Australia & Pacific Islands': 'Australia & Pacific Islands'
+            Africa: Africa
+            Other: Other
+        type: dropdown
+    photo:
+        label: Photo
+        oc.commentPosition: ''
+        mode: image
+        imageWidth: '600'
+        imageHeight: '400'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    body_content:
+        label: Bio
+        size: large
+        oc.commentPosition: ''
+        mode: split
+        span: full
+        type: markdown
+tabs:
+    fields:
+        prayer_letters:
+            label: 'Optionally Upload Prayer Letters'
+            oc.commentPosition: ''
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Prayer Letters'

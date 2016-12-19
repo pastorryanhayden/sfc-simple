@@ -51,3 +51,10 @@ fields:
         mode: split
         type: markdown
         commentAbove: '(Optional) If you are featuring this event, you can use this box to create some page content.'
+    ministry:
+        label: Ministry
+        span: auto
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: description
+        type: relation

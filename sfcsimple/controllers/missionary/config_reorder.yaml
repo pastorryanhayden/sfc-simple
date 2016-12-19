@@ -1,0 +1,4 @@
+title: Missionary
+modelClass: Sfc\SfcSimple\Models\Missionary
+toolbar:
+    buttons: reorder_toolbar

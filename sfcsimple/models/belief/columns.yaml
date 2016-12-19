@@ -4,8 +4,11 @@ columns:
         type: text
         searchable: true
         sortable: true
-    date:
-        label: Date
-        type: date
+    icon:
+        label: Icon
+        type: text
+        searchable: false
+    content:
+        label: Content
+        type: text
         searchable: true
-        sortable: true

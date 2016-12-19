@@ -34,7 +34,7 @@ class Sermon extends Model
 
         'Sfc\SfcSimple\Models\Series',
         'table' => 'sfc_sfcsimple_sermons_series',
-        'order' => 'title'
+        'order' => 'name'
 
     ],
     'speaker' => [

@@ -51,3 +51,33 @@
 1.0.18:
     - 'Created table sfc_sfcsimple_galleries'
     - builder_table_create_sfc_sfcsimple_galleries.php
+1.0.19:
+    - 'Created table sfc_sfcsimple_ministries'
+    - builder_table_create_sfc_sfcsimple_ministries.php
+1.0.20:
+    - 'Created table sfc_sfcsimple_mleaders'
+    - builder_table_create_sfc_sfcsimple_mleaders.php
+1.0.21:
+    - 'Created table sfc_sfcsimple_ministries_mleaders'
+    - builder_table_create_sfc_sfcsimple_ministries_mleaders.php
+1.0.22:
+    - 'Created table sfc_sfcsimple_ministries_events'
+    - builder_table_create_sfc_sfcsimple_ministries_events.php
+1.0.23:
+    - 'Created table sfc_sfcsimple_ministry_photos'
+    - builder_table_create_sfc_sfcsimple_ministry_photos.php
+1.0.24:
+    - 'Created table sfc_sfcsimple_beliefs'
+    - builder_table_create_sfc_sfcsimple_beliefs.php
+1.0.25:
+    - 'Created table sfc_sfcsimple_leaders'
+    - builder_table_create_sfc_sfcsimple_leaders.php
+1.0.26:
+    - 'Updated table sfc_sfcsimple_galleries'
+    - builder_table_update_sfc_sfcsimple_galleries.php
+1.0.27:
+    - 'Created table sfc_sfcsimple_missions'
+    - builder_table_create_sfc_sfcsimple_missions.php
+1.0.28:
+    - 'Updated table sfc_sfcsimple_leaders'
+    - builder_table_update_sfc_sfcsimple_leaders.php

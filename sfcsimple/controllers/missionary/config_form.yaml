@@ -1,0 +1,10 @@
+name: Missionary
+form: $/sfc/sfcsimple/models/missionary/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Missionary
+defaultRedirect: sfc/sfcsimple/missionary
+create:
+    redirect: 'sfc/sfcsimple/missionary/update/:id'
+    redirectClose: sfc/sfcsimple/missionary
+update:
+    redirect: sfc/sfcsimple/missionary
+    redirectClose: sfc/sfcsimple/missionary

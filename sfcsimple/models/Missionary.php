@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Gallery extends Model
+class Missionary extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
@@ -24,20 +24,13 @@ class Gallery extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'sfc_sfcsimple_galleries';
+    public $table = 'sfc_sfcsimple_missions';
 
-    public $attachMany = [
-    'gallery' => 'System\Models\File'
+    public $attachOne = [
+    'photo' => 'System\Models\File',
     ];
 
-    public $belongsToMany = [
-
-    'ministry' => [
-
-        'Sfc\SfcSimple\Models\Ministry',
-        'table' => 'sfc_sfcsimple_ministry_photos',
-        'order' => 'name'
-
-    ],
+    public $attachMany = [
+    'prayer_letters' => 'System\Models\File',
     ];
 }

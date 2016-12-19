@@ -1,0 +1,57 @@
+fields:
+    leader_name:
+        label: Name
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    position:
+        label: Dropdown
+        oc.commentPosition: ''
+        options:
+            'Senior Pastor': 'Senior Pastor'
+            'Assistant Pastor': 'Assistant Pastor'
+            'Associate Pastor': 'Associate Pastor'
+            'Youth Pastor': 'Youth Pastor'
+            'Childrens Pastor': 'Childrens Pastor'
+            'Youth Director': 'Youth Director'
+            'Childrens Director': 'Childrens Director'
+            Staff: Staff
+            Deacon: Deacon
+            Receptionist: Receptionist
+            Secretary: Secretary
+        span: left
+        type: dropdown
+    is_senior_pastor:
+        label: 'Senior pastor?'
+        span: auto
+        type: switch
+        comment: 'The senior pastor will get special styling and always show up at the top of the page.'
+    photo:
+        label: Photo
+        oc.commentPosition: ''
+        mode: image
+        imageWidth: '300'
+        imageHeight: '300'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    content:
+        label: Content
+        size: small
+        oc.commentPosition: ''
+        mode: split
+        span: full
+        type: markdown
+    email:
+        label: Email
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    phone:
+        label: Phone
+        span: auto
+        oc.commentPosition: ''
+        type: text

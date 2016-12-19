@@ -1,0 +1,92 @@
+fields:
+    name:
+        label: Name
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+        comment: 'This is for the URL of the ministry page.  It cannot have spaces or special characters.'
+    published:
+        label: 'Published?'
+        span: auto
+        type: switch
+    show_on_home_page:
+        label: 'Show on home page?'
+        span: left
+        type: checkbox
+    exclude_from_menus:
+        label: 'Exclude from Menus?'
+        span: right
+        type: checkbox
+    group:
+        label: 'What group is this ministry for?'
+        span: auto
+        type: text
+        commentAbove: 'i.e. Senior saints, young married couples, youth...'
+    description:
+        label: 'Give a short description of the group.'
+        size: ''
+        oc.commentPosition: ''
+        span: left
+        type: textarea
+    meeting_time:
+        label: 'When does the group meet?'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        placeholder: 'Every other Sunday'
+        type: textarea
+    meeting_place:
+        label: 'Where does the group meet?'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        placeholder: 'Church auditorium'
+        type: textarea
+    leader:
+        label: '(Optional) Group Leader'
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: description
+        span: left
+        type: relation
+tabs:
+    fields:
+        header_image:
+            label: 'Header Image'
+            mode: image
+            imageWidth: '256'
+            imageHeight: '144'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            commentAbove: 'This is optional and will be shown on the top of some themes.'
+            tab: Media
+        logo:
+            label: Logo
+            oc.commentPosition: ''
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: Media
+        body_content:
+            label: 'Page Content'
+            size: huge
+            oc.commentPosition: ''
+            mode: split
+            span: full
+            type: markdown
+            tab: 'Page Content'

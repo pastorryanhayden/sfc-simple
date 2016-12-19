@@ -1,0 +1,10 @@
+name: Mleaders
+form: $/sfc/sfcsimple/models/mleader/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Mleader
+defaultRedirect: sfc/sfcsimple/mleaders
+create:
+    redirect: 'sfc/sfcsimple/mleaders/update/:id'
+    redirectClose: sfc/sfcsimple/mleaders
+update:
+    redirect: sfc/sfcsimple/mleaders
+    redirectClose: sfc/sfcsimple/mleaders

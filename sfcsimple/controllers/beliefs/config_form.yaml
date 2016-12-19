@@ -1,0 +1,10 @@
+name: Beliefs
+form: $/sfc/sfcsimple/models/belief/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Belief
+defaultRedirect: sfc/sfcsimple/beliefs
+create:
+    redirect: 'sfc/sfcsimple/beliefs/update/:id'
+    redirectClose: sfc/sfcsimple/beliefs
+update:
+    redirect: sfc/sfcsimple/beliefs
+    redirectClose: sfc/sfcsimple/beliefs

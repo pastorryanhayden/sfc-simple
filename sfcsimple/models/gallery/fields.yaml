@@ -1,14 +1,18 @@
 fields:
     title:
         label: 'Gallery Title'
-        oc.commentPosition: ''
         span: auto
         type: text
         comment: 'This is just for the backend. It doesn''t show up on the site.'
+    date:
+        label: Date
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        type: datepicker
     gallery:
         label: Gallery
         span: full
-        oc.commentPosition: ''
         mode: image
         useCaption: true
         thumbOptions:
@@ -18,3 +22,14 @@ fields:
         imageHeight: '250'
         type: fileupload
         comment: 'Upload the gallery images here.'
+    Optional:
+        label: Optional
+        span: full
+        type: section
+    ministry:
+        label: Ministry
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

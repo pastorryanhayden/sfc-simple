@@ -1,0 +1,7 @@
+{% set leaders = __SELF__.leaders %}
+
+<ul>
+    {% for item in leaders %}
+        <li>{{item.leader_name}}</li>
+{% endfor %}
+</ul>

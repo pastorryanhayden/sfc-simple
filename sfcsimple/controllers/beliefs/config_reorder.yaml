@@ -1,0 +1,4 @@
+title: Beliefs
+modelClass: Sfc\SfcSimple\Models\Belief
+toolbar:
+    buttons: reorder_toolbar

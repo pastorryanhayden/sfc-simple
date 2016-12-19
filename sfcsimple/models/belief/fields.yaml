@@ -1,0 +1,38 @@
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    icon:
+        label: Icon
+        options:
+            User: fa-user
+            Book: fa-book
+            Globe: fa-globe
+            Users: fa-users
+            'Long Arrow Down': fa-long-arrow-down
+            Compress: fa-compress
+            Gavel: fa-gavel
+            Male: fa-male
+            Fire: fa-fire
+            Sheild: fa-shield
+            Cloud: fa-cloud
+            'Check Square O': fa-cloud-square-o
+            Warning: fa-warning
+            'Arrow Circle Up': fa-arrow-circle-up
+            Lock: fa-lock
+            Medkit: fa-medkit
+            'Line Chart': fa-line-chart
+            Institution: fa-institution
+            List: fa-list
+        span: left
+        type: dropdown
+        comment: 'Choose an icon for this belief.  The icons match the names of the Font Awesome icons.'
+    content:
+        label: Content
+        size: small
+        oc.commentPosition: ''
+        mode: split
+        span: full
+        type: markdown

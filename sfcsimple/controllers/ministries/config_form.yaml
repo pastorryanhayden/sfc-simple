@@ -1,0 +1,10 @@
+name: Ministries
+form: $/sfc/sfcsimple/models/ministry/fields.yaml
+modelClass: Sfc\SfcSimple\Models\Ministry
+defaultRedirect: sfc/sfcsimple/ministries
+create:
+    redirect: 'sfc/sfcsimple/ministries/update/:id'
+    redirectClose: sfc/sfcsimple/ministries
+update:
+    redirect: sfc/sfcsimple/ministries
+    redirectClose: sfc/sfcsimple/ministries
